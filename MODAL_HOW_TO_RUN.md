@@ -36,6 +36,6 @@ modal run modal_temstapro.py \
   `modal run modal_temstapro.py --fasta-path data/example.fasta --output-path outputs/example.tsv`
 - Batch of short sequences plus plots:
   `modal run modal_temstapro.py --fasta-path tests/data/multiple_short_sequences.fasta --output-path outputs/multi.tsv --per-res-output outputs/per_res.csv --plot-dir outputs/plots`
-- `modal run modal_temstapro.py --fasta-path tests/data/multiple_short_sequences.fasta --output-path multiple_short_sequences_pred.tsv`
+- `modal run modal_temstapro.py --fasta-path tests/data/multiple_short_sequences.fasta --output-path ./outputs/multiple_short_sequences_pred.tsv`
 
 Outputs are written once the remote job finishes; stdout/stderr from TemStaPro stream back to your terminal.

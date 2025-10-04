@@ -64,7 +64,8 @@ image = (
         "tqdm==4.66.2",
         "transformers==4.38.2",
     )
-    .add_local_dir(str(HERE), str(REMOTE_REPO_PATH))
+    .run_commands(f"git clone https://github.com/ievapudz/TemStaPro {str(REMOTE_REPO_PATH)}")
+    .run_commands(f"cd {str(REMOTE_REPO_PATH)}")
 )
 
 
